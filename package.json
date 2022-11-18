@@ -1,0 +1,22 @@
+{
+  "name": "devheat_sensei_vivek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivek2293/Devheat_Sensei_Vivek.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivek2293/Devheat_Sensei_Vivek/issues"
+  },
+  "homepage": "https://github.com/vivek2293/Devheat_Sensei_Vivek#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
