@@ -63,7 +63,7 @@ export default function Charts() {
                         options={data.options}
                         series={data.series}
                         type="line"
-                        width="1200"
+                        width="1000"
                         height="500"
                     />
             </div>
