@@ -16,12 +16,9 @@ router.route("/private").get(authToken,privatePost);
 
 router.route("/predict").post(predict);
 
-router.route("/create").post(companyInfo); 
+router.route("/create").post(companyInfo);
+ 
 router.route("/delete1").delete(companyinfoDelete); 
-try {
-} catch (error) {
-    console.log(error)
-}
 
 router.route("/update").patch(companyinfoUpdate);  
 

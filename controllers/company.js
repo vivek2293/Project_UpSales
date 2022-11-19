@@ -37,7 +37,32 @@ const companyinfosalesdataTotal = asyncWrapper(async (req, res, next) => {
     for(let i=0;i<task.length;i++){
         total+=task[i].maincompanyData.total
     }
-    res.json(total)
+    let quantity=0;
+    for(let i=0;i<task.length;i++){
+        quantity+=parseInt(task[i].maincompanyData.quantity)
+    }
+    let ans=new Map()
+    for(let i=0;i<task.length;i++){
+        try {
+            if(ans.has(task[i].maincompanyData.category)){
+                ans.set(task[i].maincompanyData.category,(parseInt(task[i].maincompanyData.quantity)+ans.get(task[i].maincompanyData.category)))
+            }else{  
+                ans.set(task[i].maincompanyData.category,parseInt(task[i].maincompanyData.quantity))
+            }
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    let max=0;
+    let finalans='0'
+    for(let [key,value] of ans){
+        if(value>max){
+            max=value;
+            finalans=key
+        }
+    }
+    res.json({total,quantity,finalans})
 });
 
 const companyInfo = asyncWrapper(async (req, res, next) => {
@@ -62,9 +87,8 @@ const companyInfo = asyncWrapper(async (req, res, next) => {
 
 const companyinfoDelete = asyncWrapper(async (req, res, next) => {
     try {
-            
-            const task = await companyData.findByIdAndDelete({_id:req.body.id});
-            res.json({task}).status(200)
+        const task = await companyData.findByIdAndDelete({_id:req.body.id});
+        res.json({task}).status(200)
         
     } catch (error) {
         console.log(error)

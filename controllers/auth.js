@@ -15,17 +15,7 @@ const allData = asyncWrapper(async (req, res, next) => {
 
 
 const privatePost = asyncWrapper(async (req, res, next) => {
-    const privatePosts = [
-        {
-            title: "Post 3",
-            content: "Post 3 is private",
-        },
-        {
-            title: "Post 4",
-            content: "Post 4 is private",
-        },
-    ];
-    return res.json({ msg:"Verified",privatePosts });
+    return res.json({ msg:"Verified" }).status(200);
 });
 
 const signup = asyncWrapper(async (req, res, next) => {
