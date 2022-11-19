@@ -8,8 +8,8 @@ const getAllPublicPosts = () => {
   return axios.get(API_URL + "/public");
 };
 
-const getAllPrivatePosts = () => {
-  return axios.get(API_URL + "/private", { headers: authHeader() });
+const getAllPrivatePosts = async() => {
+  return await axios.get(url + "/private", { headers: authHeader() });
 };
 
 const postService = {
