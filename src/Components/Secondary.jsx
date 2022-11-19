@@ -7,7 +7,7 @@ export default function Secondary() {
         <div className="row py-5 justify-content-between">
             <div className="col-md-5 mt-2 ps-5">
                 <div className="row heading ms-1"><h2 id="heading">You do the business, we will handle the sales.</h2></div>
-                <div className="row sub-text ms-3 mont" id="sub-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsum officia placeat voluptate nemo ea laudantium nobis consequuntur obcaecati suscipit?</div>
+                <div className="row sub-text ms-3 mont" id="sub-text">In today's world where unbalanced work culture has become very common UpSales becomes your saviour by tracking your sales and giving you liberty to handle other businesses.</div>
                 <div className="row justify-content-start ms-2 pt-4"><button type="button" class="btn random-btn">Get Started</button></div>
             </div>
             <div className="col-md-6 mt-2">
@@ -22,7 +22,7 @@ export default function Secondary() {
                         </div>
                         <div className="col-md-10">
                             <h4>Rewards</h4>
-                            <p className="fst-italic mont">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquid alias, iure consequuntur nemo quisquam.</p>
+                            <p className="fst-italic mont">This application rewards you some extra time by saving and keeping track of the sales.</p>
                         </div>
                     </div>
 
@@ -37,7 +37,7 @@ export default function Secondary() {
                         </div>
                         <div className="col-md-10">
                             <h4>100% Secured</h4>
-                            <p className="fst-italic mont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, accusamus?</p>
+                            <p className="fst-italic mont">Users' privacy is our utmost concern and due to which we ensure that your data and privacy are never breached. </p>
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@ export default function Secondary() {
                         </div>
                         <div className="col-md-7">
                             <h4>Intact Records</h4>
-                            <p className="fst-italic mont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque earum minus.</p>
+                            <p className="fst-italic mont">Here you will get all of your past data without the extra load of tracking and maintaing records.</p>
                         </div>
                     </div>
                 </div>
