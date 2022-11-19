@@ -1,0 +1,9 @@
+.random-btn {
+    background-color: rgb(61, 193, 212);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+    width: 8rem;
+    padding: 8px 16px;
+}
