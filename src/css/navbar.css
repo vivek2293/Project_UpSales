@@ -1,0 +1,57 @@
+.zProp{
+    z-index: 999;
+}
+
+#navbarclr{
+    background-color: #BC6FF1;
+    /* font-size: larger; */
+    padding: 0.3rem;
+    /* opacity: 0.8; */
+    /* margin-bottom: 5000px; */
+    /* padding-bottom: 5vh; */
+}
+
+#navbtnclr{
+    /* color: #000000; */
+    color: white;
+    /* font-weight: bolder; */
+    /* font-size: small; */
+    padding-right: 2rem;
+}
+
+#loginbtnclr{
+    color: #DCD6F7;
+    background-color: #091ba2;
+    font-weight: bold;
+    border: none;
+}
+
+#loginbtnclr:hover{
+    background-color: #DCD6F7;
+    color: #091ba2;
+    /* background-color:#857770;
+    color: #f3eae8; */
+    /* font-weight: 800; */
+    /* font-size: larger; */
+}
+#loginbtnclr1{
+    color: #DCD6F7;
+    background-color: #091ba2;
+    font-weight: bold;
+    border: none;
+}
+
+#loginbtnclr1:hover{
+    background-color: #DCD6F7;
+    color: #091ba2;
+    /* background-color:#857770;
+    color: #f3eae8; */
+    /* font-weight: 800; */
+    /* font-size: larger; */
+}
+
+#whomsg{
+    /* color: #FFF5E4; */
+    font-weight: bolder;
+    color:#DEF2F1;
+}

@@ -1,0 +1,27 @@
+#navbar {
+    margin-top: 0vh;
+    margin-bottom: 1.5vw;
+}
+
+.form-div {
+    margin-left: 2vw;
+}
+
+#btn-div {
+    margin-left: 3vw;
+    margin-top: 1vh;
+}
+
+button {
+    margin: 0.5em;
+    width: 8rem;
+}
+
+.custom-btn{
+    background-color: orange;
+    border-radius: 2px;
+}
+
+.form-control {
+    margin: 3px;
+}
