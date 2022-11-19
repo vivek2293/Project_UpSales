@@ -129,6 +129,15 @@ export default function Structure() {
                 setShow(true);
               }}
             ></i>
+          <i
+              className="fa fa-trash ps-4"
+              id={item.id}
+              onClick={(e) => {
+                // console.log(e.target.id)
+                setID(e.target.id);
+                deleteSaleData(e.target.id);
+              }}
+            ></i>
           </td>
         </tr>
       </>

@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import url from "../global_var";
+import { Link } from "react-router-dom";
 
 export default function Prediction() {
   const [option, setOption] = React.useState("2.0");
@@ -184,9 +185,11 @@ export default function Prediction() {
               <button type="submit" className="btn custom-btn">
                 Predict
               </button>
-              <button type="button" className="btn custom-btn">
-                Back
-              </button>
+              <Link to="/dashboard">
+                <button type="button" className="btn custom-btn ms-3">
+                  Back
+                </button>
+              </Link>
             </div>
           </form>
         </div>

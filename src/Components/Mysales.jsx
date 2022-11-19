@@ -2,8 +2,10 @@ import React from "react";
 import axios from "axios";
 import url from "../global_var";
 import "../css/mysales.css";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Mysales() {
+  const navigate = useNavigate();
   const [date, setDate] = React.useState("");
   const [option, setOption] = React.useState("Computer & Accessories");
   const [salesdata, setSalesdata] = React.useState({
@@ -41,7 +43,7 @@ export default function Mysales() {
         "category": option,
         "priceperItem": salesdata.price,
         "modelNumber": salesdata.modelNumber,
-        "total": (salesdata.quantity*salesdata.price),
+        "total": (salesdata.quantity * salesdata.price),
       },
     };
     console.log(info);
@@ -50,6 +52,8 @@ export default function Mysales() {
       .post(url + "/create", info)
       .then((res) => {
         console.log(res);
+        navigate("/dashboard");
+        window.location.reload();
       })
       .catch((err) => {
         console.log(err);
@@ -217,9 +221,11 @@ export default function Mysales() {
               <button type="submit" className="btn custom-btn">
                 Create
               </button>
-              <button type="button" className="btn custom-btn">
-                Back
-              </button>
+              <Link to="/dashboard">
+                <button type="button" className="btn custom-btn ms-3">
+                  Back
+                </button>
+              </Link>
             </div>
           </form>
         </div>

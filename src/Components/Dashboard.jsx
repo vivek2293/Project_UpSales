@@ -68,7 +68,7 @@ export default function Dashboard() {
 
             <div className='d-flex justify-content-center m-5'>
                 <div className='col-md-11 p-3 card-dash1 mx-5'>
-                    <h2 className='ps-5 pt-3 '>Visual Representation: </h2>
+                    <h2 className='ps-5 pt-3 '><i>Monthly Sales:</i> </h2>
                     <Charts />
                 </div>
             </div>

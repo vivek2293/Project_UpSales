@@ -16,10 +16,10 @@ export default function Footer() {
 
                     <div className="row">
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact us</a></li>
-                            <li><a href="../faq.html">FAQ</a></li>
+                            <li><a href="#">FAQ</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
