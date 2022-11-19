@@ -15,11 +15,12 @@ import Tertiary from './Components/Tertiary';
 import Card from './Components/Card';
 import Jumbotron from './Components/Jumbotron';
 import Footer from './Components/Footer';
-
+import Dashboard from './Components/Dashboard';
 function App() {
 
   return (
     <>
+      <Dashboard />
      {/* <Navbar /> 
     <Routes>
       <Route path="/a" element={

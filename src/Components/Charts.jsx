@@ -57,14 +57,14 @@ export default function Charts() {
 
     return (
         <div className="charts">
-            <div className="d-flex justify-content-center m-2"><h4>Chart Title</h4></div>
+            <div className="d-flex justify-content-center m-2"><h4>Sales Graph</h4></div>
             <div className="d-flex justify-content-center">
                     <Chart
                         options={data.options}
                         series={data.series}
                         type="line"
-                        width="700"
-                        height="300"
+                        width="1200"
+                        height="500"
                     />
             </div>
             
