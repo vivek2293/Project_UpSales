@@ -10,13 +10,26 @@ import Data from './Components/Data';
 import Charts from './Components/Charts';
 import Prediction from './Components/prediction';
 import Review from "./Components/review";
+import Secondary from './Components/Secondary';
+import Tertiary from './Components/a';
+import Card from './Components/Card';
+import Jumbotron from './Components/Jumbotron';
 
 function App() {
 
   return (
     <>
-     {/* <Navbar /> 
+     <Navbar /> 
     <Routes>
+      <Route path="/" element={
+        <>
+        <Jumbotron />
+        <Secondary />
+        <Tertiary />
+        <Card />
+        <Review />
+        </>
+      } />
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={
@@ -31,11 +44,13 @@ function App() {
       <Route path="/predictSale" element={
         <Prediction />
       } />
-    </Routes> */}
+    </Routes>
      {/* <Mysales />
     <Charts /> 
     <Structure /> */}
-    <Review />
+    {/* <Review /> */}
+    {/* <Secondary /> */}
+    {/* <Tertiary /> */}
       </>
   );
 }
