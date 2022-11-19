@@ -27,7 +27,7 @@ function App() {
       {/* <Dashboard /> */}
      {/* <Navbar /> 
     <Routes>
-      <Route path="/a" element={
+      <Route path="/" element={
         <>
         <Jumbotron />
         <Secondary />
@@ -38,7 +38,7 @@ function App() {
       } />
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/" element={
+      <Route path="/a" element={
         <>
           <Charts />
           <Structure />
@@ -51,13 +51,14 @@ function App() {
         <Prediction />
       } />
     </Routes>
-    <Footer /> */}
+    <Footer />
      {/* <Mysales />
     <Charts /> 
     <Structure /> */}
     {/* <Review /> */}
     {/* <Secondary /> */}
     {/* <Tertiary /> */}
+    {/* <Dashboard /> */}
       </>
   );
 }
