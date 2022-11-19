@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const asyncWrapper = require("../middleware/async");
 const authScheme = require("../models/authScheme");
-const { createCustomError } = require("../errors/custom-error");
+const { createCustomError } = require("custom-error");
 const { rejects } = require("assert");
 
 const allData = asyncWrapper(async (req, res, next) => {
