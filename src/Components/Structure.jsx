@@ -157,7 +157,7 @@ export default function Structure() {
       <Modal isOpen={show} ariaHideApp={false} id="modelName">
         <section className="p-2">
           <div className="form-div d-flex justify-content-center">
-            <div className="card col-md-5 p-2">
+            <div className="card col-md-5 p-2 card-dash2 mt-5">
               <div className="d-flex justify-content-center pt-2 pb-2">
                 <h4>Details</h4>
               </div>

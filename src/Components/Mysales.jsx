@@ -59,7 +59,7 @@ export default function Mysales() {
   return (
     <section className="" style={{ width: "100vw" }}>
       <div className="form-div d-flex justify-content-center">
-        <div className="card col-md-5 p-2">
+        <div className="card col-md-5 p-2 card-dash2">
           <div className="d-flex justify-content-center pt-2 pb-2">
             <h4>Details</h4>
           </div>

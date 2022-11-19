@@ -15,3 +15,12 @@
     border: none;
     box-shadow: 0px 0px 15px rgba(203, 199, 199, 0.824);
 }
+
+.card-dash2{
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px rgba(86, 83, 83, 0.954);
+}
+
+.center-div{
+    margin-top: 10%;
+}

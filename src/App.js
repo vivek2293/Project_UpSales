@@ -16,11 +16,15 @@ import Card from './Components/Card';
 import Jumbotron from './Components/Jumbotron';
 import Footer from './Components/Footer';
 import Dashboard from './Components/Dashboard';
+import CreateForm from './Components/CreateForm';
+
 function App() {
 
   return (
     <>
-      <Dashboard />
+    <Prediction />
+    {/* <CreateForm /> */}
+      {/* <Dashboard /> */}
      {/* <Navbar /> 
     <Routes>
       <Route path="/a" element={
