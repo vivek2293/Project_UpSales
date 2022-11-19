@@ -4,7 +4,6 @@ import"../css/footer.css";
 export default function Footer() {
     return (
         <>
-            <hr />
             <footer>
                 <div className="footer-div">
                     <div className="logo">
@@ -24,8 +23,8 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    <div className="copyright">
-                        Bill Splitter Copyright © 2022 GDSC - All rights reserved
+                    <div className="copyright pb-3">
+                        UpSales Copyright © 2022 Sensei Vivek - All rights reserved
                     </div>
 
                 </div>

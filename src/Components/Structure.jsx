@@ -168,7 +168,7 @@ export default function Structure() {
           <div className="form-div d-flex justify-content-center">
             <div className="card col-md-5 p-2 card-dash2 mt-5">
               <div className="d-flex justify-content-center pt-2 pb-2">
-                <h4>Details</h4>
+                <h4>Edit Sales</h4>
               </div>
               <form
                 onSubmit={(e) => {
@@ -325,12 +325,12 @@ export default function Structure() {
                   className="btn-div d-flex justify-content-center"
                   id="btn-div"
                 >
-                  <button type="submit" className="btn custom-btn">
+                  <button type="submit" className="btn random-btn">
                     Update
                   </button>
                   <button
                     type="button"
-                    className="btn custom-btn"
+                    className="btn random-btn"
                     onClick={() => setShow(false)}
                   >
                     Close

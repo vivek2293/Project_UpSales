@@ -1,13 +1,15 @@
 .footer-div {
+    margin-top: 8vh;
     padding-top: 5vh 0;
     font-family: 'Play', sans-serif;
     text-align: center;
+    background: rgb(191,210,255);
+background: linear-gradient(30deg, rgba(191,210,255,1) 2%, rgba(69,187,192,1) 29%, rgba(157,213,244,1) 64%, rgba(69,187,192,1) 92%);
 }
 
 .footer-div .logo {
+    padding-top: 10vh;
     width: 100%;
-    padding: 1% 0%;
-    padding: 0.6% 0%;
     color: black;
     font-size: 0.8em;
 }
@@ -68,18 +70,10 @@
     }
 }
 
-.footer-div .logo {
-    padding: 10px;
-}
-
 .footer-div .row {
     padding-top: 5px;
 }
 
 .footer-div .copyright {
     padding-bottom: 5px;
-}
-
-hr {
-    margin-top: 8vh;
 }

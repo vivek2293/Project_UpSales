@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/review.css";
 
 export default function Review() {
     return (
@@ -8,33 +9,30 @@ export default function Review() {
                 <div className='col-md-5 p-4 py-4'><p id="sub-text" className="mont">Everything you need to accept card payments and grow your business anywhere on the planet.</p></div>
             </div>
             <div className='row d-flex flex-wrap justify-content-around mt-5'>
-                <div className='col-md-3 m-4 custom-card'>
+                <div className='col-md-3 m-4 custom-card' id="card1">
                     <img></img>
-                    <p>Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo error repudiandae illum animi cum odio eum, nemo ipsam aperiam?</p>
                     <div className='d-flex flex-row'>
-                        <img></img>
                         <div>
                             <h4>Name</h4>
                             <p>founder & leader</p>
                         </div>
                     </div>
                 </div>
-                <div className='col-md-3 m-4 custom-card'>
+                <div className='col-md-3 m-4 custom-card' id="card2">
                     <img></img>
-                    <p>Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo error repudiandae illum animi cum odio eum, nemo ipsam aperiam?</p>
                     <div className='d-flex flex-row'>
-                        <img></img>
                         <div>
                             <h4>Name</h4>
                             <p>founder & leader</p>
                         </div>
                     </div>
                 </div>
-                <div className='col-md-3 m-4 custom-card'>
+                <div className='col-md-3 m-4 custom-card' id="card3">
                     <img></img>
-                    <p>Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo error repudiandae illum animi cum odio eum, nemo ipsam aperiam?</p>
                     <div className='d-flex flex-row'>
-                        <img></img>
                         <div>
                             <h4>Name</h4>
                             <p>founder & leader</p>

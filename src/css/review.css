@@ -1,0 +1,29 @@
+#card1 {
+    transition: all .3s ease-out;
+}
+
+#card1:hover {
+    transform: scale(1.03);
+    background: rgb(63, 214, 221);
+    background: linear-gradient(31deg, rgba(63, 214, 221, 0.1) 4%, rgba(191, 210, 255, 0.1017449216014531) 30%, rgba(63, 214, 221, 0.09894380115327384) 65%, rgba(157, 213, 244, 0.1017449216014531) 95%);
+}
+
+#card2 {
+    transition: all .3s ease-out;
+}
+
+#card2:hover {
+    transform: scale(1.03);
+    background: rgb(63, 214, 221);
+    background: linear-gradient(31deg, rgba(63, 214, 221, 0.1) 4%, rgba(191, 210, 255, 0.1017449216014531) 30%, rgba(63, 214, 221, 0.09894380115327384) 65%, rgba(157, 213, 244, 0.1017449216014531) 95%);
+}
+
+#card3 {
+    transition: all .3s ease-out;
+}
+
+#card3:hover {
+    transform: scale(1.03);
+    background: rgb(63, 214, 221);
+    background: linear-gradient(31deg, rgba(63, 214, 221, 0.1) 4%, rgba(191, 210, 255, 0.1017449216014531) 30%, rgba(63, 214, 221, 0.09894380115327384) 65%, rgba(157, 213, 244, 0.1017449216014531) 95%);
+}

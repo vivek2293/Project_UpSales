@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="navbarclr" className="navbar navbar-expand-sm shadow zProp">
+      <nav id="navbarclr" className="navbar navbar-expand-sm shadow zProp top-navbar">
         <div className="container-fluid px-4">
           <NavLink id="navbtnclr" className="navbar-brand" to="#">
             <svg width="60" height="60" viewBox="0 0 668 683" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -163,12 +163,12 @@ const Navbar = () => {
                 ) : (
                   <>
                     <Link className="nav-link" to="/login">
-                      <button id="loginbtnclr1" className="btn btn-outline-primary rounded-pill ms-auto">
+                      <button id="loginbtnclr1" className="btn new-btn ms-auto">
                         <i className="fa fa-sign-in me-2"></i>Login
                       </button>
                     </Link>
                     <Link className="nav-link" to="/signup">
-                      <button id="loginbtnclr" className="btn btn-outline-primary rounded-pill ms-2">
+                      <button id="loginbtnclr" className="btn new-btn ms-2">
                         <i className="fa fa-user-plus me-2"></i>Register
                       </button>
                     </Link>

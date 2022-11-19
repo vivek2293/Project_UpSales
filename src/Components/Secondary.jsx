@@ -7,7 +7,7 @@ export default function Secondary() {
         <div className="row py-5 justify-content-between">
             <div className="col-md-5 mt-2 ps-5">
                 <div className="row heading ms-1"><h2 id="heading">You do the business, we will handle the sales.</h2></div>
-                <div className="row sub-text ms-3 mont" id="sub-text">With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</div>
+                <div className="row sub-text ms-3 mont" id="sub-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsum officia placeat voluptate nemo ea laudantium nobis consequuntur obcaecati suscipit?</div>
                 <div className="row justify-content-start ms-2 pt-4"><button type="button" class="btn random-btn">Get Started</button></div>
             </div>
             <div className="col-md-6 mt-2">
@@ -22,7 +22,7 @@ export default function Secondary() {
                         </div>
                         <div className="col-md-10">
                             <h4>Rewards</h4>
-                            <p className="fst-italic mont">The best credit cards offer some tantalizing combinations of promotions and prizes</p>
+                            <p className="fst-italic mont">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquid alias, iure consequuntur nemo quisquam.</p>
                         </div>
                     </div>
 
@@ -37,7 +37,8 @@ export default function Secondary() {
                         </div>
                         <div className="col-md-10">
                             <h4>100% Secured</h4>
-                            <p className="fst-italic mont">We take proactive steps make sure your information and transactions are secure.</p>                        </div>
+                            <p className="fst-italic mont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, accusamus?</p>
+                        </div>
                     </div>
 
                     <div className="row p-3">
@@ -49,8 +50,8 @@ export default function Secondary() {
 
                         </div>
                         <div className="col-md-7">
-                            <h4>Balance Transfer</h4>
-                            <p className="fst-italic mont">A balance transfer credit card can save you a lot of money in interest charges.</p>
+                            <h4>Intact Records</h4>
+                            <p className="fst-italic mont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque earum minus.</p>
                         </div>
                     </div>
                 </div>

@@ -43,16 +43,14 @@ function Login() {
         id="customsection"
       >
         <div className="card card-body px-4 px-lg-5" id="customcard">
-          <div>
-            <center>
-              <h2>Login</h2>
-            </center>
+          <div className="d-flex justify-content-center align-items-center">
+              <h2 className="mb-1">Login</h2>
           </div>
           <hr />
           <div>
             <form>
               <div className="mb-3">
-                <label htmlFor="name" className="form-label">
+                <label htmlFor="name" className="form-label" id="email-add">
                   Email address
                 </label>
                 <input

@@ -30,16 +30,16 @@ function Signup() {
       setCheckValid("is-valid");
       const PostInfo = async () => {
         await AuthService.signup(info).then(
-            (response) => {
-              // check for token and user already exists with 200
-              console.log("Sign up successfully", response);
-              navigate("/home");
-              window.location.reload();
-            },
-            (error) => {
-              console.log(error);
-            }
-          );
+          (response) => {
+            // check for token and user already exists with 200
+            console.log("Sign up successfully", response);
+            navigate("/home");
+            window.location.reload();
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
       };
 
       PostInfo();
@@ -54,7 +54,7 @@ function Signup() {
       >
         <div className="card card-body px-4 px-lg-5" id="customCard">
           <div className="d-flex justify-content-center pt-2">
-            <h2>Create an account</h2>
+            <h2 className="mb-1">Create an account</h2>
           </div>
           <hr />
           <div>
@@ -69,14 +69,14 @@ function Signup() {
             >
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
-                  Name
+                  Company Name
                 </label>
                 <input
                   type="name"
                   className="form-control"
                   id="name"
                   onChange={(e) => setcompanyName(e.target.value)}
-                  placeholder="Enter your name"
+                  placeholder="Enter company name"
                   required
                 />
               </div>

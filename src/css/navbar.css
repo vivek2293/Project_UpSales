@@ -1,9 +1,11 @@
-.zProp{
+.zProp {
     z-index: 999;
 }
 
-#navbarclr{
-    background-color: #BC6FF1;
+#navbarclr {
+    /* background-color: #BC6FF1; */
+    background: rgb(191,210,255);
+background: linear-gradient(30deg, rgba(191,210,255,1) 2%, rgba(69,187,192,1) 29%, rgba(157,213,244,1) 64%, rgba(69,187,192,1) 92%);
     /* font-size: larger; */
     padding: 0.3rem;
     /* opacity: 0.8; */
@@ -11,7 +13,7 @@
     /* padding-bottom: 5vh; */
 }
 
-#navbtnclr{
+#navbtnclr {
     /* color: #000000; */
     color: white;
     /* font-weight: bolder; */
@@ -19,29 +21,14 @@
     padding-right: 2rem;
 }
 
-#loginbtnclr{
+#loginbtnclr {
     color: #DCD6F7;
     background-color: #091ba2;
     font-weight: bold;
     border: none;
 }
 
-#loginbtnclr:hover{
-    background-color: #DCD6F7;
-    color: #091ba2;
-    /* background-color:#857770;
-    color: #f3eae8; */
-    /* font-weight: 800; */
-    /* font-size: larger; */
-}
-#loginbtnclr1{
-    color: #DCD6F7;
-    background-color: #091ba2;
-    font-weight: bold;
-    border: none;
-}
-
-#loginbtnclr1:hover{
+#loginbtnclr:hover {
     background-color: #DCD6F7;
     color: #091ba2;
     /* background-color:#857770;
@@ -50,8 +37,31 @@
     /* font-size: larger; */
 }
 
-#whomsg{
+#loginbtnclr1 {
+    color: #DCD6F7;
+    background-color: #091ba2;
+    font-weight: bold;
+    border: none;
+}
+
+#loginbtnclr1:hover {
+    background-color: #DCD6F7;
+    color: #091ba2;
+    /* background-color:#857770;
+    color: #f3eae8; */
+    /* font-weight: 800; */
+    /* font-size: larger; */
+}
+
+#whomsg {
     /* color: #FFF5E4; */
     font-weight: bolder;
-    color:#DEF2F1;
+    color: #DEF2F1;
+}
+
+.new-btn {
+    border-radius: 5px;
+    margin: 0.5em;
+    width: 8rem;
+    /* transition: ; */
 }
