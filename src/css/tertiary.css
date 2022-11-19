@@ -1,12 +1,3 @@
-.cardln .r1 h2 {
-    font-family: Poppins, sans-serif;
-    font-size: 3.5rem;
-}
-
-.cardIn .r2 p {
-    font-family: Poppins, sans-serif;
-}
-
 .custom-btn {
     background-color: rgb(61, 193, 212);
     color: black;
@@ -15,4 +6,15 @@
     margin: 1rem;
     width: 6em;
     padding: 8px 16px;
+}
+
+#heading {
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#sub-text {
+    font-size: 1.15rem;
+    font-weight: 350;
+    line-height: 30px;
 }

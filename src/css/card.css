@@ -1,5 +1,5 @@
 .custom-btn {
-    background-color: rgb(61,193,212);
+    background-color: rgb(61, 193, 212);
     color: black;
     border: none;
     border-radius: 5px;
@@ -14,4 +14,15 @@
 
 .subtext {
     margin: 1vw 1vh;
+}
+
+#heading {
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#sub-text {
+    font-size: 1.15rem;
+    font-weight: 350;
+    line-height: 30px;
 }

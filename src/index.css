@@ -4,15 +4,29 @@
   box-sizing: border-box;
 }
 
+.mont {
+  font-family: Montserrat, sans-serif;
+}
+
 .custom-card{
   border: 1px solid black;
-  border-radius: 18% 8%;
+  border-radius: 6% 6%;
   padding: 10px 20px;
-  box-shadow: 0 6px 12px rgb(0 0 0 / 50%);
+  box-shadow: 4px 6px 15px rgb(0 0 0 / 25%);
 }
 
 .custom-card1{
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 15px;
   padding: 10px 20px;
-  box-shadow: 0 6px 12px rgb(0 0 0 / 50%);
+  box-shadow: 0 0px 20px rgb(0 0 0 / 20%);
+}
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+body ::-webkit-scrollbar{
+  display: none;
 }

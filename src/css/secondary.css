@@ -7,3 +7,14 @@
     width: 8rem;
     padding: 8px 16px;
 }
+
+#heading {
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#sub-text {
+    font-size: 1.15rem;
+    font-weight: 350;
+    line-height: 30px;
+}
