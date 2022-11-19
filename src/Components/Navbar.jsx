@@ -22,10 +22,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="navbarclr" className="navbar navbar-expand-sm shadow zProp top-navbar">
+      <nav id="navbarclr" className="navbar navbar-expand-sm zProp top-navbar card-dash3">
         <div className="container-fluid px-4">
           <NavLink id="navbtnclr" className="navbar-brand" to="#">
-            <svg width="60" height="60" viewBox="0 0 668 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="70" height="60" viewBox="0 0 668 683" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_82_2334)">
                 <path d="M239.279 479.319C223.119 479.319 223.119 449.293 239.279 449.293H346.385C362.554 449.293 362.573 479.319 346.385 479.319H239.279Z" fill="url(#paint0_linear_82_2334)" />
                 <path d="M245.624 489.994H339.179C327.857 506.644 313.279 521 292.929 521C271.913 521 258.093 505.275 245.624 489.994Z" fill="url(#paint1_linear_82_2334)" />
@@ -121,7 +121,6 @@ const Navbar = () => {
                 </linearGradient>
               </defs>
             </svg>
-
           </NavLink>
           <button
             className="navbar-toggler"
@@ -136,20 +135,44 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <NavLink id="navbtnclr" className="nav-link" aria-current="page" to="/">
-                  Home
-                </NavLink>
+              <li className="nav-item custom-txt">
+                {
+                  isloggedin ? (
+                    <NavLink id="navbtnclr" className="nav-link" aria-current="page" to="/dashboard">
+                      Dashboard
+                    </NavLink>
+                  ) : (
+                    <NavLink id="navbtnclr" className="nav-link" aria-current="page" to="/">
+                      Home
+                    </NavLink>
+                  )
+                }
               </li>
-              <li className="nav-item">
-                <NavLink id="navbtnclr" className="nav-link" to="/about">
-                  About
-                </NavLink>
+              <li className="nav-item custom-txt">
+                {
+                  isloggedin ? (
+                    <NavLink id="navbtnclr" className="nav-link" aria-current="page" to="/createSale">
+                      Upload
+                    </NavLink>
+                  ) : (
+                    <NavLink id="navbtnclr" className="nav-link" to="/">
+                      About
+                    </NavLink>
+                  )
+                }
               </li>
-              <li className="nav-item">
-                <NavLink id="navbtnclr" className="nav-link" to="/faq">
-                  FAQ
-                </NavLink>
+              <li className="nav-item custom-txt">
+              {
+                  isloggedin ? (
+                    <NavLink id="navbtnclr" className="nav-link" aria-current="page" to="/predictSale">
+                      Predictor
+                    </NavLink>
+                  ) : (
+                    <NavLink id="navbtnclr" className="nav-link" to="/">
+                      FAQ
+                    </NavLink>
+                  )
+                }
               </li>
             </ul>
             <form className="d-flex" role="search">

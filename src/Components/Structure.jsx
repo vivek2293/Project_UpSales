@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import Modal from "react-modal";
 import url from "../global_var.js";
-// import Data from './Data.jsx';
 import "../css/structure.css";
 
 export default function Structure() {
@@ -21,7 +20,7 @@ export default function Structure() {
   React.useEffect(() => {
     axios
       .post(url + "/salesdata", {
-        companyName: "mayur1",
+        companyName: localStorage.getItem("companyName"),
       })
       .then((res) => {
         setData(res.data);
@@ -47,7 +46,7 @@ export default function Structure() {
   function submitdata() {
     let info = {
       id: ID,
-      companyName: "mayur1",
+      companyName: localStorage.getItem("companyName"),
       maincompanyData: {
         itemName: salesdata.itemname,
         modelNumber: salesdata.modelNumber,

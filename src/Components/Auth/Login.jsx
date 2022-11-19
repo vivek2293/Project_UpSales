@@ -20,7 +20,7 @@ function Login() {
           () => {
             setValid("d-none");
             setLoading(false);
-            navigate("/home");
+            navigate("/dashboard");
             window.location.reload();
           },
           (e) => {

@@ -23,6 +23,12 @@
   box-shadow: 0 0px 20px rgb(0 0 0 / 20%);
 }
 
+.custom-txt{
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: rgb(59, 56, 56);
+}
+
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
