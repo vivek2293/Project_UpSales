@@ -1,22 +1,26 @@
 {
-  "name": "devheat_sensei_vivek",
+  "name": "newbackend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vivek2293/Devheat_Sensei_Vivek.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vivek2293/Devheat_Sensei_Vivek/issues"
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   },
-  "homepage": "https://github.com/vivek2293/Devheat_Sensei_Vivek#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "bcrypt": "^5.1.0",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.2",
+    "multimap": "^1.1.0"
   }
 }
