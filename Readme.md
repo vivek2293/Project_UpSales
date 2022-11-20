@@ -13,6 +13,30 @@ A solution for all sales managers around the world which can manage sales and pr
 
 
 # Features
+<br>
+<br>
+<p align="center">
+<img src="./Snapshots/Dash1.svg" width="300"/>
+</p>
+
+<br>
+<br>
+<p align="center">
+<img src="./Snapshots/Dash2.svg" width="300"/>
+</p>
+
+<br>
+<br>
+<p align="center">
+<img src="./Snapshots/Dash3.svg" width="300"/>
+</p>
+
+<br>
+<br>
+<p align="center">
+<img src="./Snapshots/Dash4.svg" width="300"/>
+</p>
+
 
 ## `Feature 1`
 
@@ -49,7 +73,7 @@ A solution for all sales managers around the world which can manage sales and pr
 <br>
 <br>
 <p align="center">
-<img src="./Snapshots/MI.png" width="300"/>
+<img src="./Snapshots/mi.png" width="300"/>
 </p>
 
 
