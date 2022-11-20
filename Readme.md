@@ -49,7 +49,7 @@ A solution for all sales managers around the world which can manage sales and pr
 <br>
 <br>
 <p align="center">
-<img src="./Snapshots/ML.png" width="300"/>
+<img src="./Snapshots/MI.png" width="300"/>
 </p>
 
 
