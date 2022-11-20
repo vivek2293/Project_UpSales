@@ -16,25 +16,19 @@ A solution for all sales managers around the world which can manage sales and pr
 <br>
 <br>
 <p align="center">
-<img src="./Snapshots/Dash1.png" width="300"/>
+<img src="./Snapshots/Dash1.png" width="720"/>
 </p>
 
-<br>
-<br>
 <p align="center">
-<img src="./Snapshots/Dash2.png" width="300"/>
+<img src="./Snapshots/Dash2.png" width="720"/>
 </p>
 
-<br>
-<br>
 <p align="center">
-<img src="./Snapshots/Dash3.png" width="300"/>
+<img src="./Snapshots/Dash3.png" width="720"/>
 </p>
 
-<br>
-<br>
 <p align="center">
-<img src="./Snapshots/Dash4.png" width="300"/>
+<img src="./Snapshots/Dash4.png" width="720"/>
 </p>
 
 
@@ -49,17 +43,15 @@ A solution for all sales managers around the world which can manage sales and pr
 <br>
 <br>
 <p align="center">
-<img src="./Snapshots/Dashboard Upper.png" width="300"/>
+<img src="./Snapshots/Dashboard Upper.png" width="720"/>
 </p>
-<br>
-<br>
+
 <p align="center">
-<img src="./Snapshots/Data.png" width="300"/>
+<img src="./Snapshots/Data.png" width="720"/>
 </p>
-<br>
-<br>
+
 <p align="center">
-<img src="./Snapshots/Graph.png" width="300"/>
+<img src="./Snapshots/Graph.png" width="720"/>
 </p>
 
 ## `Feature 2`
@@ -73,7 +65,7 @@ A solution for all sales managers around the world which can manage sales and pr
 <br>
 <br>
 <p align="center">
-<img src="./Snapshots/mi.png" width="300"/>
+<img src="./Snapshots/mi.png" width="720"/>
 </p>
 
 
