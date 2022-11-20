@@ -4,7 +4,7 @@ require("dotenv").config();
 const authToken = async (req, res, next) => {
     const token = req.headers['x-auth-token'];
     if (!token) {
-        res.status(401).json({
+        return res.status(401).json({
         errors: [
             {
                 msg: "Token not found",
@@ -18,7 +18,7 @@ const authToken = async (req, res, next) => {
         console.log(user)
         next();
     }catch (error) {
-        res.status(403).json({
+        return res.status(403).json({
         errors: [
             {
             msg: "Invalid token",

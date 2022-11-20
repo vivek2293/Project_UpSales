@@ -8,14 +8,15 @@ const authScheme = require("../models/authScheme");
 const { createCustomError } = require("custom-error");
 const { rejects } = require("assert");
 
-const allData = asyncWrapper(async (req, res, next) => {
-  const data = await authScheme.find({});
-  res.status(200).send(data);
-});
+// const allData = asyncWrapper(async (req, res, next) => {
+//   const data = await authScheme.find({});
+//   res.status(200).send(data);
+// });
 
 
 const privatePost = asyncWrapper(async (req, res, next) => {
-    return res.json({ msg:"Verified" }).status(200);
+  console.log(req.body)
+   return res.json({ msg:"Verified" }).status(200);
 });
 
 const signup = asyncWrapper(async (req, res, next) => {
@@ -111,4 +112,4 @@ const predict = asyncWrapper(async(req,res,next) => {
   });
 })
 
-module.exports = { allData, signup, login, privatePost , predict};
+module.exports = { signup, login, privatePost , predict};

@@ -13,7 +13,6 @@ const companyinfosinglesalesData = asyncWrapper(async (req, res, next) => {
 
 const companyinfosalesData = asyncWrapper(async (req, res, next) => {
     const task=await companyData.find({companyName:req.body.companyName})
-    // console.log("hello")
     let ans=new Map()
 
     for(let i=0;i<task.length;i++){
@@ -61,6 +60,7 @@ const companyinfosalesdataTotal = asyncWrapper(async (req, res, next) => {
             finalans=key
         }
     }
+    
     res.json({total:total,quantity:quantity,finalans:finalans})
 });
 
