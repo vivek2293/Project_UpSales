@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const {allData, signup, login, privatePost, predict} = require("../controllers/auth");
+const {signup, login, privatePost, predict} = require("../controllers/auth");
 const { companyInfo, companyinfoDelete, companyinfoUpdate, companyinfoTotal, companyinfosalesData, companyinfosinglesalesData,companyinfosalesdataTotal } = require("../controllers/company");
 
 
@@ -18,7 +18,7 @@ router.route("/predict").post(predict);
 
 router.route("/create").post(companyInfo);
  
-router.route("/delete1").delete(companyinfoDelete); 
+router.route("/delete").post(companyinfoDelete); 
 
 router.route("/update").patch(companyinfoUpdate);  
 

@@ -31,8 +31,7 @@ const signup = asyncWrapper(async (req, res, next) => {
   const chkPassword = await bcrypt.compare(confirmPassword, password);
 
   if (!chkPassword) {
-    res.status(404);
-    return next(createCustomError(`Password Mismatch`, 404));
+    return res.status(404);
   }
 
   try {
@@ -51,21 +50,20 @@ const signup = asyncWrapper(async (req, res, next) => {
       },
       process.env.JWT_SECRET
     );
-    return res.status(200).json({ accessToken: token, companyName });
+    return res.status(200).json({ accessToken: token, companyName: req.body.companyName });
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     return res.status(404).json({ status: "User already present." });
   }
 
 });
 
 const login = asyncWrapper(async (req, res, next) => {
-  const { email, password,companyName } = req.body;
+  const { email, password } = req.body;
 
   const user = await authScheme.findOne({ email });
 
   if (!user) {
-    res.status(404);
     return next(createCustomError("Wrong Username/Password", 404));
   }
 
@@ -79,9 +77,8 @@ const login = asyncWrapper(async (req, res, next) => {
       },
       process.env.JWT_SECRET
     );
-    return res.status(200).json({ accessToken: token, companyName });
+    return res.status(200).json({ accessToken: token, companyName: user.companyName });
   } else {
-    res.status(404);
     return next(createCustomError(`Wrong Username/Password`, 404));
   }
 });

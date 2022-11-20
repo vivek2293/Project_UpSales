@@ -5,7 +5,6 @@ const companyData= require("../models/companyData.js")
 const companyinfosinglesalesData = asyncWrapper(async (req, res, next) => {
     const task=await companyData.findOne({_id:req.body.id})
     let Date1=task.date
-    // let datepush=Date1.slice(6)+"-"+Date1.slice(3,5)+"-"+Date1.slice(0,2)
     const obj = { date : Date1 }
     Object.entries(obj).forEach(([key,value]) => { task.maincompanyData[key] = value })
     res.json(task.maincompanyData)
@@ -27,7 +26,6 @@ const companyinfosalesData = asyncWrapper(async (req, res, next) => {
     for(let [key,value] of reversed){
         Data.push(value.maincompanyData)
     }
-    // console.log(Data)
     res.json(Data)
 });
 
@@ -62,7 +60,7 @@ const companyinfosalesdataTotal = asyncWrapper(async (req, res, next) => {
             finalans=key
         }
     }
-    res.json({total,quantity,finalans})
+    res.json({total:total,quantity:quantity,finalans:finalans})
 });
 
 const companyInfo = asyncWrapper(async (req, res, next) => {
@@ -85,15 +83,16 @@ const companyInfo = asyncWrapper(async (req, res, next) => {
 
 
 
-const companyinfoDelete = asyncWrapper(async (req, res, next) => {
+const companyinfoDelete = async (req, res, next) => {
+    console.log(req.body)
     try {
-        const task = await companyData.findByIdAndDelete({_id:req.body.id});
+        const task = await companyData.findByIdAndDelete({_id: req.body.id});
         res.json({task}).status(200)
         
     } catch (error) {
         console.log(error)
     }
-});
+};
 
 
 
@@ -120,7 +119,6 @@ const companyinfoUpdate = asyncWrapper(async (req, res, next) => {
 
 const companyinfoTotal = asyncWrapper(async (req, res, next) => {
     try {
-
         let ans=new Map();
         let x=[]
         let y=[]
