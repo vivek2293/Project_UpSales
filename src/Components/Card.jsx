@@ -6,8 +6,8 @@ export default function Card() {
         <div className='row pb-5 justify-content-around'>
             <div className='col-md-6'>
                 <div className='row heading'><h2 id='heading'>Helpful tool to analyse your sales</h2></div>
-                <div className='row ms-2'><p id='subtext' className='mont'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut atque corporis voluptatum quidem neque repellendus deleniti quisquam dolorem odio veniam. Iste sint quisquam sapiente ullam!</p></div>
-                <div className='row ms-2 pt-3 ps-2'><button type="button" class="btn random-btn">Get Started</button></div>
+                <div className='row ms-2'><p id='subtext' className='mont'>One can analyse his past data or sales and can prepare accordingly for the future.</p></div>
+                <div className='row ms-2 pt-3 ps-2'><button type="button" class="btn random-btn">Analyse</button></div>
             </div>
             <div className='col-md-4'>
                 <svg width="400" height="395" viewBox="0 0 439 395" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -173,9 +173,9 @@ export default function Tertiary() {
           </div>
           <div className="col-md-6 cardln">
             <div className='row p-2'> <h2 id="heading">Easily control and access your data</h2></div>
-            <div className='row p-2'><p id="sub-text" className="mont">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequatur quibusdam numquam illo assumenda id quam veritatis sint quasi, magnam quae doloribus voluptatibus repellendus necessitatibus?</p></div>
+            <div className='row p-2'><p id="sub-text" className="mont">Easily access your data anytime and anywhere without carrying the records and also can control your data by deleting or by editing your data.</p></div>
             <div className="row ps-1">
-              <button className="btn random-btn ms-3">Get Started</button>
+              <button className="btn random-btn ms-3">Access Data</button>
             </div>
           </div>
         </div>
