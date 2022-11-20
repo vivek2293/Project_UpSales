@@ -23,9 +23,9 @@ export default function Dashboard() {
             axios.post(url + "/total", {
                 companyName: info
             }).then((res) => {
-                setTotal(res.total);
-                setQuantity(res.quantity);
-                setFinalItem(res.finalans);
+                setTotal(res.data.total);
+                setQuantity(res.data.quantity);
+                setFinalItem(res.data.finalans);
             }).catch((err) => {
                 console.log(err);
             })

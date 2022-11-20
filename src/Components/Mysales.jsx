@@ -36,7 +36,7 @@ export default function Mysales() {
   function submitdata() {
     const info = {
       date,
-      companyName: localStorage.getItem("companyName"),
+      companyName: JSON.parse(localStorage.getItem("companyName")),
       maincompanyData: {
         "itemName": salesdata.itemname,
         "quantity": salesdata.quantity,

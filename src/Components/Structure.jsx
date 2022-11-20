@@ -20,7 +20,7 @@ export default function Structure() {
   React.useEffect(() => {
     axios
       .post(url + "/salesdata", {
-        companyName: localStorage.getItem("companyName"),
+        companyName: JSON.parse(localStorage.getItem("companyName")),
       })
       .then((res) => {
         setData(res.data);
@@ -46,7 +46,7 @@ export default function Structure() {
   function submitdata() {
     let info = {
       id: ID,
-      companyName: localStorage.getItem("companyName"),
+      companyName: JSON.parse(localStorage.getItem("companyName")),
       maincompanyData: {
         itemName: salesdata.itemname,
         modelNumber: salesdata.modelNumber,
