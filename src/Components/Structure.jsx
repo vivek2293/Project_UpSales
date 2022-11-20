@@ -62,6 +62,8 @@ export default function Structure() {
     //   console.log(e.target.id);
     axios.patch(url + "/update", info).then((res) => {
       console.log(res);
+      window.location.replace("/dashboard");
+      window.location.reload();
     });
   }
 
@@ -94,11 +96,12 @@ export default function Structure() {
   }
 
   function deleteSaleData(id) {
+  let data = {id};
+  console.log(typeof(id))
     axios
-      .delete(url + "/delete", {
-        id
-      })
+      .post(url + "/delete", data )
       .then((res) => {
+        window.location.reload();
         console.log(res);
       })
       .catch((err) => {

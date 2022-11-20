@@ -4,7 +4,7 @@ import url from "../global_var";
 import Chart from "react-apexcharts";
 
 export default function Charts() {
-    const [company, setCompany] = React.useState("mayur1");
+    const [company, setCompany] = React.useState(localStorage.getItem("companyName"));
     //How to get company name -> from localstorage
    
 

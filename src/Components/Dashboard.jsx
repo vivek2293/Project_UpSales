@@ -3,16 +3,15 @@ import "../css/dashboard.css"
 import Charts from './Charts';
 import Structure from './Structure';
 import postService from "../Services/post.service"
-import { useEffect } from "react";
 
 export default function Dashboard() {
-    React.useEffect(() => {
-        const user = postService.getAllPrivatePosts();
-        console.log(user.status)
-        if(user.status === undefined || user.status !== 200){
-            console.log("logout")
-        }
-      }, []);
+    // React.useEffect(() => {
+    //     const user = postService.getAllPrivatePosts();
+    //     console.log(user.status)
+    //     if(user.status === undefined || user.status !== 200){
+    //         console.log("logout")
+    //     }
+    //   }, []);
 
     return (
         <>

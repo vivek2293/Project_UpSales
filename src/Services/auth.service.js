@@ -18,6 +18,7 @@ const login = (info) => {
   return axios
     .post(url + "/login", info)
     .then((response) => {
+      console.log(response.data)
       if (response.data.accessToken) {
         localStorage.setItem("user", JSON.stringify(response.data.accessToken));
         localStorage.setItem("companyName", JSON.stringify(response.data.companyName));
