@@ -2,9 +2,14 @@ import React from 'react';
 import "../css/dashboard.css"
 import Charts from './Charts';
 import Structure from './Structure';
+import url from '../global_var';
 import postService from "../Services/post.service"
+import axios from 'axios';
 
 export default function Dashboard() {
+    const [total, setTotal] = React.useState(0);
+    const [quantity, setQuantity] = React.useState(0);
+    const [finalItem, setFinalItem] = React.useState("");
     // React.useEffect(() => {
     //     const user = postService.getAllPrivatePosts();
     //     console.log(user.status)
@@ -12,6 +17,19 @@ export default function Dashboard() {
     //         console.log("logout")
     //     }
     //   }, []);
+
+    React.useEffect(() => {
+        const info = JSON.parse(localStorage.getItem("companyName"));
+            axios.post(url + "/total", {
+                companyName: info
+            }).then((res) => {
+                setTotal(res.total);
+                setQuantity(res.quantity);
+                setFinalItem(res.finalans);
+            }).catch((err) => {
+                console.log(err);
+            })
+          }, []);
 
     return (
         <>
@@ -36,8 +54,8 @@ export default function Dashboard() {
                 <div className='col-md-3 p-3 card-dash'>
                     <div className='row'>
                         <div className='col-md-8'>
-                            <p>Clients</p>
-                            <h2>512</h2>
+                            <p>Total Revenue</p>
+                            <h2>{total}</h2>
                         </div>
                         <div className='d-flex col-md-4 justify-content-center align-items-center'>
                             <svg width="80" height="45" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,8 +67,8 @@ export default function Dashboard() {
                 <div className='col-md-3 p-3 card-dash'>
                     <div className='row'>
                         <div className='col-md-8'>
-                            <p>Clients</p>
-                            <h2>512</h2>
+                            <p>Total Quantity</p>
+                            <h2>{quantity}</h2>
                         </div>
                         <div className='d-flex col-md-4 justify-content-center align-items-center'>
                             <svg width="60" height="40" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,8 +80,8 @@ export default function Dashboard() {
                 <div className='col-md-3 p-3 card-dash'>
                     <div className='row'>
                         <div className='col-md-8'>
-                            <p>Clients</p>
-                            <h2>512</h2>
+                            <p>Category in Demand</p>
+                            <h2>{finalItem}</h2>
                         </div>
                         <div className=' d-flex col-md-4 justify-content-center align-items-center'>
                             <svg width="70" height="45" viewBox="0 0 91 88" fill="none" xmlns="http://www.w3.org/2000/svg">
