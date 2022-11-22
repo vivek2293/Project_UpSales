@@ -54,14 +54,38 @@ const companyinfosalesdataTotal = asyncWrapper(async (req, res, next) => {
     }
     let max=0;
     let finalans='0'
+
     for(let [key,value] of ans){
         if(value>max){
             max=value;
             finalans=key
         }
     }
-    
-    res.json({total:total,quantity:quantity,finalans:finalans})
+
+
+    let ans2=new Map()
+    for(let i=0;i<task.length;i++){
+        try {
+            if(ans2.has(task[i].maincompanyData.category)){
+                ans2.set(task[i].maincompanyData.category,(parseInt(task[i].maincompanyData.quantity*task[i].maincompanyData.priceperItem)+ans2.get(task[i].maincompanyData.category)))
+            }else{  
+                ans2.set(task[i].maincompanyData.category,parseInt(task[i].maincompanyData.quantity*task[i].maincompanyData.priceperItem))
+            }
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    let max2=0;
+    let finalans2='0'
+    for(let [key,value] of ans2){
+        if(value>max2){
+            max2=value;
+            finalans2=key
+        }
+    }
+    const sortedarray = new Map([...ans2].sort((a, b) => b[1] - a[1]));
+    res.json({total:total,quantity:quantity,"Category In demand":finalans,"Most profit By category":finalans2,final:[...sortedarray]})
 });
 
 const companyInfo = asyncWrapper(async (req, res, next) => {
