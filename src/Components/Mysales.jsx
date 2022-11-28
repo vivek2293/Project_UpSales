@@ -38,12 +38,12 @@ export default function Mysales() {
       date,
       companyName: JSON.parse(localStorage.getItem("companyName")),
       maincompanyData: {
-        "itemName": salesdata.itemname,
-        "quantity": salesdata.quantity,
-        "category": option,
-        "priceperItem": salesdata.price,
-        "modelNumber": salesdata.modelNumber,
-        "total": (salesdata.quantity * salesdata.price),
+        itemName: salesdata.itemname,
+        quantity: salesdata.quantity,
+        category: option,
+        priceperItem: salesdata.price,
+        modelNumber: salesdata.modelNumber,
+        total: salesdata.quantity * salesdata.price,
       },
     };
     console.log(info);

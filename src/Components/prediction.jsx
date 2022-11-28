@@ -36,11 +36,16 @@ export default function Prediction() {
     console.log(info);
 
     const post = async () => {
-      await axios.post(url + "/predict", info).then((res) => {
-        console.log(res)
-        window.alert(res.data.value);
-      }).catch((err) => { console.log(err) })
-    }
+      await axios
+        .post(url + "/predict", info)
+        .then((res) => {
+          console.log(res);
+          window.alert(res.data.value);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
 
     post();
   }
@@ -49,7 +54,7 @@ export default function Prediction() {
   console.log(predictor);
 
   return (
-    <div className='center-div'>
+    <div className="center-div">
       <div className="form-div d-flex justify-content-center">
         <div className="card col-md-5 p-2 card-dash2">
           <div className="d-flex justify-content-center pt-2 pb-2">
@@ -152,7 +157,9 @@ export default function Prediction() {
                 <input
                   type="number"
                   name="shippingCost"
-                  value={predictor.shippingCost > 0 ? predictor.shippingCost : 0}
+                  value={
+                    predictor.shippingCost > 0 ? predictor.shippingCost : 0
+                  }
                   className="form-control form-control-sm"
                   onChange={handleChange}
                 />
@@ -195,6 +202,5 @@ export default function Prediction() {
         </div>
       </div>
     </div>
-
   );
 }

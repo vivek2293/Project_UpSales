@@ -1,79 +1,84 @@
 .footer-div {
-    margin-top: 8vh;
-    padding-top: 5vh 0;
-    font-family: 'Play', sans-serif;
-    text-align: center;
-    background: rgb(191,210,255);
-background: linear-gradient(30deg, rgba(191,210,255,1) 2%, rgba(69,187,192,1) 29%, rgba(157,213,244,1) 64%, rgba(69,187,192,1) 92%);
+  margin-top: 8vh;
+  padding-top: 5vh 0;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  background: rgb(191, 210, 255);
+  background: linear-gradient(
+    30deg,
+    rgba(191, 210, 255, 1) 2%,
+    rgba(69, 187, 192, 1) 29%,
+    rgba(157, 213, 244, 1) 64%,
+    rgba(69, 187, 192, 1) 92%
+  );
 }
 
 .footer-div .logo {
-    padding-top: 10vh;
-    width: 100%;
-    color: black;
-    font-size: 0.8em;
+  padding-top: 10vh;
+  width: 100%;
+  color: black;
+  font-size: 0.8em;
 }
 
 .footer-div .logo a {
-    color: black;
+  color: black;
 }
 
-
 .footer-div .logo a:hover {
-    color: grey;
+  color: grey;
 }
 
 .footer-div .row a:hover {
-    color: grey;
+  color: grey;
 }
 
 .footer-div .logo a i {
-    font-size: 2em;
-    padding: 10px;
+  font-size: 2em;
+  padding: 10px;
 }
 
 .footer-div .logo a {
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
 }
 
 .footer-div .row a {
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
 }
 
 .footer-div .row ul {
-    width: 100%;
+  width: 100%;
 }
 
 .footer-div .row ul li {
-    display: inline-block;
-    padding: 0px 30px;
+  display: inline-block;
+  padding: 0px 30px;
 }
 
-@media (max-width:720px) {
-    .footer-div {
-        text-align: left;
-        padding: 5%;
-    }
+@media (max-width: 720px) {
+  .footer-div {
+    text-align: left;
+    padding: 5%;
+  }
 
-    .footer-div .row ul li {
-        display: block;
-        padding: 10px 0px;
-        text-align: left;
-    }
+  .footer-div .row ul li {
+    display: block;
+    padding: 10px 0px;
+    text-align: left;
+  }
 
-    .footer-div .logo a i {
-        padding: 0% 3%;
-    }
+  .footer-div .logo a i {
+    padding: 0% 3%;
+  }
 }
 
 .footer-div .row {
-    padding-top: 5px;
+  padding-top: 5px;
 }
 
 .footer-div .copyright {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }

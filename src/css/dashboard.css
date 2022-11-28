@@ -1,30 +1,30 @@
-.breadcrumb{
-    font-size: 2rem;
+.breadcrumb {
+  font-size: 2rem;
 }
 
-#curlabel{
-    font-weight: 900;
+#curlabel {
+  font-weight: 900;
 }
 
-.card-dash{
-    border: none;
-    box-shadow: 0px 0px 10px rgba(186, 181, 181, 0.785);
+.card-dash {
+  border: none;
+  box-shadow: 0px 0px 10px rgba(186, 181, 181, 0.785);
 }
 
-.card-dash1{
-    border: none;
-    box-shadow: 0px 0px 15px rgba(203, 199, 199, 0.824);
+.card-dash1 {
+  border: none;
+  box-shadow: 0px 0px 15px rgba(203, 199, 199, 0.824);
 }
 
-.card-dash2{
-    border: 2px solid black;
-    box-shadow: 0px 0px 20px rgba(86, 83, 83, 0.954);
+.card-dash2 {
+  border: 2px solid black;
+  box-shadow: 0px 0px 20px rgba(86, 83, 83, 0.954);
 }
 
-.card-dash3{
-    box-shadow: 0px 0px 20px rgba(125, 197, 191, 0.24);
+.card-dash3 {
+  box-shadow: 0px 0px 20px rgba(125, 197, 191, 0.24);
 }
 
-.center-div{
-    margin-top: 10%;
+.center-div {
+  margin-top: 10%;
 }

@@ -1,18 +1,18 @@
 #modelName {
-    height: 78vh;
+  height: 78vh;
 }
 
 .random-btn {
-    background-color: rgb(61, 193, 212);
-    color: black;
-    border: none;
-    border-radius: 5px;
-    margin: 0.5em;
-    width: 8rem;
-    padding: 8px 16px;
-    transition: all 1s ease-out;
+  background-color: rgb(61, 193, 212);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5em;
+  width: 8rem;
+  padding: 8px 16px;
+  transition: all 1s ease-out;
 }
 
 .random-btn:hover {
-    background-color: rgb(3, 219, 252);
+  background-color: rgb(3, 219, 252);
 }

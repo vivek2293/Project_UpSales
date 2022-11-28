@@ -6,7 +6,7 @@ import AuthService from "../Services/auth.service";
 const Home = () => {
   const [privatePosts, setPrivatePosts] = useState([]);
 
-//   const navigate = useNavigate();
+  //   const navigate = useNavigate();
 
   useEffect(() => {
     PostService.getAllPrivatePosts().then(
@@ -18,7 +18,7 @@ const Home = () => {
         // Invalid token
         if (error.response && error.response.status === 403) {
           AuthService.logout();
-        //   navigate("/login");
+          //   navigate("/login");
           window.location.reload();
         }
       }

@@ -1,33 +1,32 @@
 .random-btn {
-    background-color: rgb(61, 193, 212);
-    color: black;
-    border: none;
-    border-radius: 5px;
-    margin: 0.5em;
-    width: 8rem;
-    padding: 8px 16px;
+  background-color: rgb(61, 193, 212);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5em;
+  width: 8rem;
+  padding: 8px 16px;
 }
 
 .random-btn:hover {
-    background-color: rgb(3, 219, 252);
+  background-color: rgb(3, 219, 252);
 }
 
 .heading {
-    margin: 1vw 1vh;
+  margin: 1vw 1vh;
 }
 
 .subtext {
-    margin: 1vw 1vh;
+  margin: 1vw 1vh;
 }
 
 #heading {
-    font-size: 2.75rem;
-    font-weight: 700;
+  font-size: 2.75rem;
+  font-weight: 700;
 }
 
 #sub-text {
-    font-size: 1.15rem;
-    font-weight: 350;
-    line-height: 30px;
+  font-size: 1.15rem;
+  font-weight: 350;
+  line-height: 30px;
 }
-

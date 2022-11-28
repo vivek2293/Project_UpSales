@@ -4,9 +4,7 @@ import url from "../global_var";
 import Chart from "react-apexcharts";
 
 export default function Charts() {
-    const [company, setCompany] = React.useState(JSON.parse(localStorage.getItem("companyName")));
-    //How to get company name -> from localstorage
-   
+    const [company, setCompany] = React.useState(JSON.parse(localStorage.getItem("companyName")));  
 
     React.useEffect(() => {
         axios.post(url + "/plotdata", {

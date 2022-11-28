@@ -96,10 +96,10 @@ export default function Structure() {
   }
 
   function deleteSaleData(id) {
-  let data = {id};
-  console.log(typeof(id))
+    let data = { id };
+    console.log(typeof id);
     axios
-      .post(url + "/delete", data )
+      .post(url + "/delete", data)
       .then((res) => {
         window.location.reload();
         console.log(res);
@@ -131,7 +131,7 @@ export default function Structure() {
                 setShow(true);
               }}
             ></i>
-          <i
+            <i
               className="fa fa-trash ps-4"
               id={item.id}
               onClick={(e) => {

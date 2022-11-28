@@ -16,7 +16,6 @@
 }
 
 .custom-card1{
-  /* border: 1px solid black; */
   border: none;
   border-radius: 15px;
   padding: 10px 20px;
@@ -30,12 +29,13 @@
 }
 
 body {
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-x: hidden; 
 }
 
 body ::-webkit-scrollbar{
   display: none;
 }
+
 
 .height-100{
   height: 100vh;

@@ -1,124 +1,96 @@
 .jumbotron-up {
-    cursor: default;
+  cursor: default;
 }
 
 .jumbotron {
-    background-color: #cdcdcd;
+  background-color: #cdcdcd;
 }
 
 .jumbotron .container:before {
-    content: '';
-    display: table;
+  content: "";
+  display: table;
 }
 
 .right-image {
-    position: absolute;
-    top: 15%;
-    left: 0;
-    width: 100%;
-    height: auto;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 .title {
-    color: #383c43;
-    font-size: 40px !important;
-    font-weight: 700 !important;
-    line-height: 1.1;
-
-    // Phone
-    @media only screen and (max-width: 767px) {
-        font-size: 26px !important;
-    }
-
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-        font-size: 36px !important;
-    }
-
-
-    /* Portrait */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-        font-size: 36px !important;
-    }
-
-
-    /* Landscape */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-        font-size: 36px !important;
-    }
-
+  color: #383c43;
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  line-height: 1.1;
 }
 
 .money-back {
-    letter-spacing: inherit;
-    line-height: 20px;
-    font-weight: 500;
-    margin: 0;
+  letter-spacing: inherit;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0;
 
-    @media only screen and (max-width: 767px) {
-        font-size: 13px;
-    }
+  @media only screen and (max-width: 767px) {
+    font-size: 13px;
+  }
 }
 
 .btn-offer {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    padding: 7px 18px;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #fff;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    background-color: #d2a767;
-    border-color: #d2a767;
-    transition: 1s all ease-in-out;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 7px 18px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  background-color: #d2a767;
+  border-color: #d2a767;
+  transition: 1s all ease-in-out;
 }
 
 .btn-offer:hover {
-    background-color: #dc9321;
-    border-color: #dc9321;
-    color: #fff;
-    text-transform: none;
-    text-decoration: none;
-    transition: 0.7s all ease-in-out;
+  background-color: #dc9321;
+  border-color: #dc9321;
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
+  transition: 0.7s all ease-in-out;
 }
 
 .img-responsive {
-    max-width: 555px;
-    max-height: 555px
+  max-width: 555px;
+  max-height: 555px;
 }
 
 .info-icon {
-    margin-right: 5px;
-    vertical-align: text-bottom;
+  margin-right: 5px;
+  vertical-align: text-bottom;
 }
 
 @media only screen and (max-width: 767px) {
-
-    .mobile-flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+  .mobile-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .more-info-link {
-    color: inherit;
-    text-decoration: underline;
-    transition: 0.7s all ease-in-out;
-
-    &:hover {
-        color: #c38a35;
-        transition: 0.7s all ease-in-out;
-    }
+  color: inherit;
+  text-decoration: underline;
+  transition: 0.7s all ease-in-out;
 }
 
 .subject {
-    letter-spacing: 3px;
-    font-size: 14px;
-    color: #717282;
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #717282;
 }
