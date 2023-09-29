@@ -1,5 +1,6 @@
 # Sensei Vivek
-# Theme : FINeTech
+# Theme : FinTech
+
 ```
 Note: This project uses separate branches for the application's frontend and backend.
 This allows us to independently develop and deploy each component, and to avoid conflicts when merging changes.
